@@ -8,3 +8,25 @@ pamatyti jo pateikto svorio konvertavimą į:
 Pastaba: atvaizdavimas turi būti matomas pateikus formą ir pateikiamas
 <div id="output"></div> viduje, bei turi turėti bent minimalų stilių;
 ------------------------------------------------------------------- */
+
+document.querySelector('form').addEventListener('submit', e => {
+
+    e.preventDefault()
+
+    let ivestis = e.target.elements.search.value
+    let svarai = ivestis * 2.2046
+    let gramai = ivestis * 0.001
+    let uncijos = ivestis * 35.274
+
+    document.getElementById('output').innerHTML += `
+
+    <p>Svarai (lb): <span>${svarai}</span></p>
+    <p>Gramai (g): <span>${gramai}</span></p>
+    <p>Uncijos (oz): <span>${uncijos}</span></p>
+    <hr>
+    `
+    
+
+    
+    
+})

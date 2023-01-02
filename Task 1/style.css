@@ -63,3 +63,24 @@ form {
     font-size: 2em;
   }
 }
+
+#output {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  font-size: 2.5em;
+  margin-top: 150px;
+}
+
+#output hr{
+  height: 5px;
+  width: 60%;
+  border: none;
+  background-color: black;
+  margin-bottom: 25px;
+}
+
+#output span {
+  font-weight: bold;
+}
