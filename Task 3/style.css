@@ -58,4 +58,34 @@
   padding: 30px;
   border-radius: 5px;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.userCard {
+  background-color: #474747;
+  margin: 25px 0px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  width: 50%;
+  align-self: center;
+  justify-self: center;
+  border-radius: 15px;
+  color: white;
+}
+.userCard:hover {
+  background-color: #757575;
+}
+.userCard img {
+  width: 150px;
+  border-radius: 80px;
+  box-shadow: 0px 0px 20px white;
+  margin-bottom: 25px;
+}
+
+.hide {
+  display: none;
 }
