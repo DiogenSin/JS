@@ -10,5 +10,5 @@ document.getElementById('btn__element').addEventListener('click', e => {
     e.preventDefault
     ++clicked
     console.log(clicked)
-    document.getElementById('btn__state').value = clicked
+    document.getElementById('btn__state').innerHTML = clicked
 })
