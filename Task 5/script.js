@@ -19,3 +19,22 @@ const users = [
   { id: '8', name: 'Simon Peterson', age: 30, hasDog: false },
   { id: '9', name: 'Daniel Cane', age: 51, hasDog: true },
 ];
+
+// Grąžina šunų turėtojus
+
+function filterDogOwners(array){
+  array.forEach(element => {
+    element.hasDog == true ? console.log(element) : null
+
+  });
+}
+console.log(filterDogOwners(users))
+
+
+function filterAdults(array){
+  array.forEach(element => {
+    element.age >= 18 ? console.log(element) : null
+
+  });
+}
+console.log(filterAdults(users))
